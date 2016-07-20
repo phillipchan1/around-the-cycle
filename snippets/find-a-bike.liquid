@@ -1,0 +1,37 @@
+<label>
+	Height:
+	<select class="height-filter">
+		<option value="all">All Heights</option>
+		{% for tag in collections.bikes.all_tags %}
+			{%if tag contains "Height" %}
+				<option value="{{tag}}">{{tag | replace: "_", " "}}</option>
+			{% endif %}
+		{% endfor %}
+	</select>
+</label>
+
+<label>
+	Type of Bike:
+	<select class="type-filter">
+		<option value="all">All Types</option>
+		{% for product_type in shop.types %}
+		  <option value="{{product_type}}">{{product_type | replace: "Consignment - Bicycles - ", "" | replace: "Inventory - Bicycles - ", ""}}</option>
+		{% endfor %}
+	</select>
+</label>
+
+<button id="find-bike">Find My Bike</button>
+
+<script>
+	var $height;
+
+	$('.height-filter').change(function() {
+		$height = $('.height-filter option:selected').val();
+		console.log($height);
+	});
+
+	$('#find-bike').on("click", function() {
+		$height = $height.replace(" ", "-").toLowerCase();
+		window.location.href = 'http://around-the-cycle.myshopify.com/collections/all/' + $height;
+	});
+</script>
