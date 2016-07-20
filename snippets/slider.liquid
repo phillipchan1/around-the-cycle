@@ -1,0 +1,29 @@
+{% if settings.slider_home_enable %}
+  <div class="flexslider">
+    <ul class="slides">
+      {% for i in (1..6) %}
+        {% capture slide %}slide_{{ i }}{% endcapture %}
+        {% capture slide_link %}slide_{{ i }}_link{% endcapture %}
+        {% capture slide_img %}slide_{{ i }}.jpg{% endcapture %}
+        {% capture slide_headline %}slide_{{ i }}_headline{% endcapture %}
+      {% capture slide_subheadline %}slide_{{ i }}_subheadline{% endcapture %}
+      {% capture slide_button %}slide_{{ i }}_button{% endcapture %}
+        {% if settings[slide] %}
+          <li>
+           
+            <a href="{{ settings[slide_link] }}"> <!-- Added to make image a link -->
+              {{ slide_img | asset_url | img_tag: settings[slide_alt] }}
+            </a>
+            <!--
+            <div class="slide-text">
+              <h1>{{ settings[slide_headline] }}</h1>
+              <p>{{ settings[slide_subheadline] }}</p>
+              <a class="btn" href="{{ settings[slide_link] }}">{{ settings[slide_button] }}</a>
+            </div>
+			-->
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+{% endif %}

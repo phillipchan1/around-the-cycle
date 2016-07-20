@@ -1,0 +1,75 @@
+<ul id="MobileNav" class="mobile-nav large--hide">
+
+  {% for link in linklists.main-menu.links %}
+    {% assign child_list_handle = link.title | handleize %}
+    {% if linklists[child_list_handle].links != blank %}
+      <li class="mobile-nav__link" aria-haspopup="true">
+        <a href="{{ link.url }}" class="mobile-nav__sublist-trigger">
+          {{ link.title }}
+          <span class="icon-fallback-text mobile-nav__sublist-expand">
+            <span class="icon icon-plus" aria-hidden="true"></span>
+            <span class="fallback-text">+</span>
+          </span>
+          <span class="icon-fallback-text mobile-nav__sublist-contract">
+            <span class="icon icon-minus" aria-hidden="true"></span>
+            <span class="fallback-text">-</span>
+          </span>
+        </a>
+        <ul class="mobile-nav__sublist">
+          {% for childlink in linklists[child_list_handle].links %}
+            {% if linklists[childlink.handle] == empty %}
+              <li class="mobile-nav__sublist-link">
+                <a href="{{ childlink.url }}">{{ childlink.title | escape }}</a>
+              </li>
+            {% else %}
+              <li class="mobile-nav__sublist-link">
+                <a href="{{ childlink.url }}" class="mobile-nav__sublist-trigger">
+                  {{ childlink.title }}
+                  <span class="icon-fallback-text mobile-nav__sublist-expand">
+                    <span class="icon icon-plus" aria-hidden="true"></span>
+                    <span class="fallback-text">+</span>
+                  </span>
+                  <span class="icon-fallback-text mobile-nav__sublist-contract">
+                    <span class="icon icon-minus" aria-hidden="true"></span>
+                    <span class="fallback-text">-</span>
+                  </span>
+                </a>
+                <ul class="mobile-nav__sublist">
+                  {% for childlink in linklists[childlink.handle].links %}
+                    <li class="mobile-nav__sublist-link">
+                      <a href="{{ childlink.url }}">{{ childlink.title }}</a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </li>
+    {% else %}
+      <li class="mobile-nav__link">
+        <a href="{{ link.url }}">{{ link.title }}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
+
+  {% if shop.customer_accounts_enabled %}
+    {% if customer %}
+      <li class="mobile-nav__link">
+        <a href="/account">{{ 'layout.customer.account' | t }}</a>
+      </li>
+      <li class="mobile-nav__link">
+        {{ 'layout.customer.log_out' | t | customer_logout_link }}
+      </li>
+    {% else %}
+      <li class="mobile-nav__link">
+        {{ 'layout.customer.log_in' | t | customer_login_link }}
+      </li>
+      {% if shop.customer_accounts_optional %}
+        <li class="mobile-nav__link">
+          {{ 'layout.customer.create_account' | t | customer_register_link }}
+        </li>
+      {% endif %}
+    {% endif %}
+  {% endif %}
+</ul>

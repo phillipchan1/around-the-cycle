@@ -1,0 +1,960 @@
+<!--
+  If you're using our theme_gem to upload your files, make sure you close your
+  input and br tags as if it were XHTML.
+    - eg. <br /> and <input type="text" />
+
+    More info on settings:
+      - http://docs.shopify.com/themes/theme-templates/settings
+-->
+<div class="section-info">
+  <h3 class="heading">Classic Theme by <a href="http://www.shopify.com">Shopify</a></h3>
+  <br />
+  <p>Support: <a href="mailto:themesupport@shopify.com">themesupport@shopify.com</a></p>
+</div>
+
+<!-- Colors -->
+<fieldset>
+  <legend>Colors</legend>
+  <table>
+    <tr>
+      <td colspan="2">
+        <h3 class="heading">General</h3>
+      </td>
+    </tr>
+    <tr>
+      <th><label for="color_body_bg">Body Background</label></th>
+      <td><input id="color_body_bg" name="color_body_bg" class="color" type="text" value="#ffffff" /></td>
+    </tr>
+    <tr>
+      <th><label for="color_header_bg">Header &amp; Footer Background</label></th>
+      <td><input id="color_header_bg" name="color_header_bg" class="color" type="text" value="#ffffff" /></td>
+    </tr>
+    <tr>
+      <th>
+        <label for="color_borders">Lines &amp; Borders</label>
+      </th>
+      <td><input id="color_borders" name="color_borders" class="color" type="text" value="#e5e5e5" /></td>
+    </tr>
+    <tr>
+      <th><label for="color_topbar_bg">Toolbar Background</label></th>
+      <td><input id="color_topbar_bg" name="color_topbar_bg" class="color" type="text" value="#204a80" /></td>
+    </tr>
+    <tr>
+      <th><label for="color_topbar_text">Toolbar Text</label></th>
+      <td><input id="color_topbar_text" name="color_topbar_text" class="color" type="text" value="#ffffff" /></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <h3 class="heading">Buttons</h3>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <label for="color_primary">Buttons &amp; Links</label>
+      </th>
+      <td><input id="color_primary" name="color_primary" class="color" type="text" value="#204a80" /></td>
+    </tr>
+    <tr>
+      <th>
+        <label for="color_button_primary_text">Button Text</label>
+      </th>
+      <td><input id="color_button_primary_text" name="color_button_primary_text" class="color" type="text" value="#ffffff" /></td>
+    </tr>
+    <tr>
+      <th>
+        <label for="color_secondary">Secondary Buttons</label>
+      </th>
+      <td><input id="color_secondary" name="color_secondary" class="color" type="text" value="#dcdcdc" /></td>
+    </tr>
+    <tr>
+      <th><label for="color_button_secondary_text">Secondary Button Text</label></th>
+      <td><input id="color_button_secondary_text" name="color_button_secondary_text" class="color" type="text" value="#ffffff" /></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <h3 class="heading">Text</h3>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <label for="color_header_text">Headings</label>
+      </th>
+      <td><input id="color_header_text" name="color_header_text" class="color" type="text" value="#333333" /></td>
+    </tr>
+    <tr>
+      <th><label for="color_body_text">Body Text</label></th>
+      <td><input id="color_body_text" name="color_body_text" class="color" type="text" value="#333333" /></td>
+    </tr>
+    <tr>
+      <th><label for="color_footer_text">Footer Text</label></th>
+      <td><input id="color_footer_text" name="color_footer_text" class="color" type="text" value="#636363" /></td>
+    </tr>
+    <tr>
+      <th><label for="color_footer_social_link">Social Icons</label></th>
+      <td><input id="color_footer_social_link" name="color_footer_social_link" class="color" type="text" value="#bbbbbb" /></td>
+    </tr>
+  </table>
+</fieldset>
+
+<!-- Typography -->
+<fieldset>
+  <legend>Typography</legend>
+  <table>
+    <tr>
+      <td colspan="2">
+        <h3 class="heading">Base Styles</h3>
+      </td>
+    </tr>
+    <tr>
+      <th><label for="type_base_family">Base Family</label></th>
+      <td>
+        <select name="type_base_family" id="type_base_family">
+          <optgroup label="Sans-serif">
+            <option value="'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, 'AppleGothic', sans-serif">Avant Garde</option>
+            <option value="'Gill Sans', 'Gill Sans MT', Calibri, sans-serif">Gill Sans</option>
+            <option value="'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif">Helvetica Neue</option>
+            <option value="Arial, 'Helvetica Neue', Helvetica, sans-serif">Arial</option>
+            <option value="Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif">Candara</option>
+            <option value="Geneva, Tahoma, Verdana, sans-serif">Geneva</option>
+          </optgroup>
+          <optgroup label="Sans-serif | Google Web Fonts">
+            <option value="Google_Droid+Sans_400,700_sans">Droid Sans</option>
+            <option value="Google_Lato_400,700_sans">Lato</option>
+            <option value="Google_Montserrat_400,700_sans">Montserrat</option>
+            <option value="Google_Open+Sans_400,700_sans">Open Sans</option>
+            <option value="Google_PT+Sans_400,700_sans">PT Sans</option>
+            <option value="Google_Raleway_600,800_sans">Raleway</option>
+            <option value="Google_Roboto_400,700_sans">Roboto</option>
+            <option value="Google_Source+Sans+Pro_400,700_sans">Source Sans Pro</option>
+            <option value="Google_Ubuntu_400,700_sans">Ubuntu</option>
+          </optgroup>
+          <optgroup label="Serif">
+            <option value="'Big Caslon', 'Book Antiqua', 'Palatino Linotype', Georgia, serif">Big Calson</option>
+            <option value="'Calisto MT', 'Bookman Old Style', Bookman, 'Goudy Old Style', Garamond, 'Hoefler Text', 'Bitstream Charter', Georgia, serif">Calisto MT</option>
+            <option value="Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif">Baskerville</option>
+            <option value="Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif">Garamond</option>
+            <option value="Georgia, 'Hoefler Text', 'Times New Roman', serif">Georgia</option>
+            <option value="TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif">Times New Roman</option>
+          </optgroup>
+          <optgroup label="Serif | Google Web Fonts">
+            <option value="Google_Arvo_400,400_serif">Arvo</option>
+            <option value="Google_Crimson+Text_400,700_serif">Crimson Text</option>
+            <option value="Google_Droid+Serif_400,700_serif">Droid Serif</option>
+            <option value="Google_Lora_400,700_serif">Lora</option>
+            <option value="Google_PT+Serif_400,700_serif">PT Serif</option>
+            <option value="Google_Vollkorn_400,700_serif">Vollkorn</option>
+          </optgroup>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <label for="type_base_size">Base Font Size</label>
+      </th>
+      <td>
+        <select name="type_base_size" id="type_base_size">
+          <option value="12px">12px</option>
+          <option value="13px">13px</option>
+          <option value="14px">14px</option>
+          <option value="15px">15px</option>
+          <option value="16px">16px</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <h3 class="heading">Header Styles</h3>
+      </td>
+    </tr>
+    <tr>
+      <th><label for="type_header_family">Header Family</label></th>
+      <td>
+        <select name="type_header_family" id="type_header_family">
+          <optgroup label="Sans-serif">
+            <option value="'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, 'AppleGothic', sans-serif">Avant Garde</option>
+            <option value="'Gill Sans', 'Gill Sans MT', Calibri, sans-serif">Gill Sans</option>
+            <option value="'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif">Helvetica Neue</option>
+            <option value="Arial, 'Helvetica Neue', Helvetica, sans-serif">Arial</option>
+            <option value="Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif">Candara</option>
+            <option value="Geneva, Tahoma, Verdana, sans-serif">Geneva</option>
+          </optgroup>
+          <optgroup label="Sans-serif | Google Web Fonts">
+            <option value="Google_Droid+Sans_400_sans">Droid Sans</option>
+            <option value="Google_Droid+Sans_700_sans">Droid Sans Bold</option>
+            <option value="Google_Lato_400_sans">Lato</option>
+            <option value="Google_Lato_700_sans">Lato Bold</option>
+            <option value="Google_Montserrat_400_sans">Montserrat</option>
+            <option value="Google_Montserrat_700_sans">Montserrat Bold</option>
+            <option value="Google_Open+Sans_400_sans">Open Sans</option>
+            <option value="Google_Open+Sans_700_sans">Open Sans Bold</option>
+            <option value="Google_PT+Sans_400_sans">PT Sans</option>
+            <option value="Google_PT+Sans_700_sans">PT Sans Bold</option>
+            <option value="Google_Roboto_400_sans">Roboto</option>
+            <option value="Google_Roboto_700_sans">Roboto Bold</option>
+            <option value="Google_Source+Sans+Pro_400_sans">Source Sans Pro</option>
+            <option value="Google_Source+Sans+Pro_700_sans">Source Sans Pro Bold</option>
+            <option value="Google_Ubuntu_400_sans">Ubuntu</option>
+            <option value="Google_Ubuntu_700_sans">Ubuntu Bold</option>
+          </optgroup>
+          <optgroup label="Serif">
+            <option value="'Big Caslon', 'Book Antiqua', 'Palatino Linotype', Georgia, serif">Big Calson</option>
+            <option value="'Calisto MT', 'Bookman Old Style', Bookman, 'Goudy Old Style', Garamond, 'Hoefler Text', 'Bitstream Charter', Georgia, serif">Calisto MT</option>
+            <option value="Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif">Baskerville</option>
+            <option value="Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif">Garamond</option>
+            <option value="TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif">Times New Roman</option>
+          </optgroup>
+          <optgroup label="Serif | Google Web Fonts">
+            <option value="Google_Arvo_400_serif">Arvo</option>
+            <option value="Google_Arvo_700_serif">Arvo Bold</option>
+            <option value="Google_Crimson+Text_400_serif">Crimson Text</option>
+            <option value="Google_Crimson+Text_700_serif">Crimson Text Bold</option>
+            <option value="Google_Droid+Serif_400_serif">Droid Serif</option>
+            <option value="Google_Droid+Serif_700_serif">Droid Serif Bold</option>
+            <option value="Google_Lora_400_serif">Lora</option>
+            <option value="Google_Lora_700_serif">Lora Bold</option>
+            <option value="Google_PT+Serif_400_serif">PT Serif</option>
+            <option value="Google_PT+Serif_700_serif">PT Serif Bold</option>
+            <option value="Google_Vollkorn_400_serif">Vollkorn</option>
+            <option value="Google_Vollkorn_700_serif">Vollkorn Bold</option>
+          </optgroup>
+        </select>
+      </td>
+    </tr>
+  </table>
+</fieldset>
+
+<!-- Header -->
+<fieldset>
+  <legend>Header &amp; Navigation</legend>
+  <table>
+    <tr>
+      <td colspan="2">
+        <h3 class="heading">Logo</h3>
+      </td>
+    </tr>
+    <tr>
+      <th><label for="logo_use_image">Use Custom Logo</label></th>
+      <td><input type="checkbox" id="logo_use_image" name="logo_use_image" /></td>
+    </tr>
+    <tr>
+      <th>
+        <label for="logo_image">
+          Custom Logo
+          <br /><small>Max 450px by 200px</small>
+        </label>
+      </th>
+      <td><input type="file" name="logo.png" id="logo_image" data-max-width="450" data-max-height="200" /></td>
+    </tr>
+    <tr>
+      <th>
+        <label for="logo_max_width">
+          Max Logo Width
+          <br /><small>Defines max-width</small>
+        </label>
+      </th>
+      <td>
+        <input type="text" id="logo_max_width" name="logo_max_width" size="2" value="450" class="inline" />
+        <span>px</span>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <h3 class="heading">Favicon</h3>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="favicon_enable">
+          <input type="checkbox" id="favicon_enable" name="favicon_enable" value="1" selected="selected" />Use custom icon
+          <br /><small>16px x 16px png</small>
+        </label>
+      </td>
+      <td><input type="file" id="favicon" name="favicon.png" data-max-width="16" data-max-height="16" /></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <h3 class="heading">Header Bar</h3>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <label for="header_message">
+          Header Message
+          <br /><small>Max 55 characters</small>
+        </label>
+      </th>
+      <td><input type="text" id="header_message" name="header_message" size="50" maxlength="55" /></td>
+    </tr>
+    <tr>
+      <th><label for="header_search_enable">Show search in header</label></th>
+      <td><input type="checkbox" id="header_search_enable" name="header_search_enable" /></td>
+    </tr>
+  </table>
+</fieldset>
+
+<!-- Sidebar -->
+<fieldset>
+  <legend>Sidebar</legend>
+  <table>
+    <tr>
+      <td colspan="2">
+        <h3 class="heading">Sidebar Navigation</h3>
+        <small>Add second level navigation lists by following <a href="http://docs.shopify.com/manual/your-website/navigation/create-drop-down-menu" target="_blank">this guide</a>.</small>
+      </td>
+    </tr>
+    <tr colspan="2">
+      <td><select name="sidebar_linklist_1" class="linklist" /></td>
+    </tr>
+    <tr colspan="2">
+      <td><select name="sidebar_linklist_2" class="linklist" /></td>
+    </tr>
+    <tr colspan="2">
+      <td><select name="sidebar_linklist_3" class="linklist" /></td>
+    </tr>
+    <tr colspan="2">
+      <td><select name="sidebar_linklist_4" class="linklist" /></td>
+    </tr>
+    <tr colspan="2">
+      <td><select name="sidebar_linklist_5" class="linklist" /></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <h3 class="heading">Optional Elements</h3>
+      </td>
+    </tr>
+    <tr>
+      <th><label for="sidebar_type_enable">Display 'Shop by Type'</label></th>
+      <td><input type="checkbox" id="sidebar_type_enable" name="sidebar_type_enable" value="1" /></td>
+    </tr>
+    <tr>
+      <th><label for="sidebar_vendor_enable">Display 'Shop by Vendor'</label></th>
+      <td><input type="checkbox" id="sidebar_vendor_enable" name="sidebar_vendor_enable" value="1" /></td>
+    </tr>
+    <tr>
+      <th><label for="sidebar_articles_enable">Display 'Recent Blog Articles'</label></th>
+      <td><input type="checkbox" id="sidebar_articles_enable" name="sidebar_articles_enable" value="1" /></td>
+    </tr>
+    <tr>
+      <th><label for="sidebar_articles_blog">Show articles from</label></th>
+      <td><select class="blog" name="sidebar_articles_blog" id="sidebar_articles_blog" /></td>
+    </tr>
+    <tr>
+      <th><label for="sidebar_content_enable">Enable custom content</label></th>
+      <td><input type="checkbox" id="sidebar_content_enable" name="sidebar_content_enable" value="1" /></td>
+    </tr>
+    <tr>
+      <th>
+        <label for="sidebar_content_page">
+          Show content from
+          <br /><small>Max 50 words</small>
+        </label>
+      </th>
+      <td><select class="page" name="sidebar_content_page" id="sidebar_content_page" /></td>
+    </tr>
+  </table>
+</fieldset>
+
+<!-- Footer -->
+<fieldset>
+  <legend>Footer</legend>
+  <table>
+    <tr>
+      <th><label for="footer_quicklinks_enable">Show quick links</label></th>
+      <td><input type="checkbox" id="footer_quicklinks_enable" name="footer_quicklinks_enable" value="1" /></td>
+    </tr>
+    <tr>
+      <th><label for="footer_quicklinks_linklist">Quick links navigation</label></th>
+      <td><select class="linklist" name="footer_quicklinks_linklist" id="footer_quicklinks_linklist" /></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <hr />
+      </td>
+    </tr>
+    <tr>
+      <th><label for="footer_social_enable">Show social media links</label></th>
+      <td><input type="checkbox" id="footer_social_enable" name="footer_social_enable" value="1" /></td>
+    </tr>
+    <tr>
+      <td><label for="social_twitter_link">Twitter link</label></td>
+      <td><input type="url" id="social_twitter_link" name="social_twitter_link" size="50" /></td>
+    </tr>
+    <tr>
+      <td><label for="social_facebook_link">Facebook link</label></td>
+      <td><input type="url" id="social_facebook_link" name="social_facebook_link" size="50" /></td>
+    </tr>
+    <tr>
+      <td><label for="social_pinterest_link">Pinterest link</label></td>
+      <td><input type="url" id="social_pinterest_link" name="social_pinterest_link" size="50" /></td>
+    </tr>
+    <tr>
+      <td><label for="social_google_plus_link">Google Plus link</label></td>
+      <td><input type="url" id="social_google_plus_link" name="social_google_plus_link" size="50" /></td>
+    </tr>
+    <tr>
+      <td><label for="social_instagram_link">Instagram link</label></td>
+      <td><input type="url" id="social_instagram_link" name="social_instagram_link" size="50" /></td>
+    </tr>
+    <tr>
+      <td><label for="social_tumblr_link">Tumblr link</label></td>
+      <td><input type="url" id="social_tumblr_link" name="social_tumblr_link" size="50" /></td>
+    </tr>
+    <tr>
+      <td><label for="social_youtube_link">YouTube link</label></td>
+      <td><input type="url" id="social_youtube_link" name="social_youtube_link" size="50" /></td>
+    </tr>
+    <tr>
+      <td><label for="social_vimeo_link">Vimeo link</label></td>
+      <td><input type="url" id="social_vimeo_link" name="social_vimeo_link" size="50" /></td>
+    </tr>
+    <tr>
+      <td><label for="social_fancy_link">Fancy link</label></td>
+      <td><input type="url" id="social_fancy_link" name="social_fancy_link" size="50" /></td>
+    </tr>
+    <tr>
+      <td><label for="social_rss_link">RSS link</label></td>
+      <td>
+        <input type="url" id="social_rss_link" name="social_rss_link" size="50" />
+        <br /><small>http://store.myshopify.com/blogs/blogname.atom</small>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <hr />
+      </td>
+    </tr>
+    <tr>
+      <th><label for="footer_location_enable">Show footer location info</label></th>
+      <td colspan="2"><input type="checkbox" id="footer_location_enable" name="footer_location_enable" value="1" /></td>
+    </tr>
+    <tr>
+      <th><label for="footer_location_text">Footer contact text</label></th>
+      <td>
+        <textarea name="footer_location_text" cols="60" rows="5" id="footer_location_text" value="" />
+      </td>
+    </tr>
+    <tr>
+      <th><label for="footer_contact_enable">Show footer contact info</label></th>
+      <td colspan="2"><input type="checkbox" id="footer_contact_enable" name="footer_contact_enable" value="1" /></td>
+    </tr>
+    <tr>
+      <th><label for="footer_contact_text">Footer contact text</label></th>
+      <td>
+        <textarea name="footer_contact_text" cols="60" rows="5" id="footer_contact_text" value="" />
+        <small>Basic HTML formatting is allowed</small>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <hr />
+      </td>
+    </tr>
+    <tr>
+      <th><label for="footer_newsletter_enable">Show Newsletter Field</label></th>
+      <td><input type="checkbox" id="footer_newsletter_enable" name="footer_newsletter_enable" value="1" /></td>
+    </tr>
+    <tr>
+      <th><label for="newsletter_form_action">MailChimp Form Action URL</label></th>
+      <td>
+        <input type="text" id="newsletter_form_action" name="newsletter_form_action" value="" />
+        <br /><small><a href="http://docs.shopify.com/support/configuration/store-customization/where-do-i-get-my-mailchimp-form-action" target="_blank">Where do I find my MailChimp form action URL?</a></small>
+      </td>
+    </tr>
+  </table>
+</fieldset>
+
+<!-- Home Page -->
+<fieldset>
+  <legend>Home Page</legend>
+  <table>
+    <tr>
+      <td>
+        <h3 class="heading">Section Order</h3>
+        <p>Choose which sections to show on your home page and their order.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <select name="home_section_1" id="home_section_1">
+          <option value="">None</option>
+          <option value="slider">Slider</option>
+          <option value="featured-collections">Featured Collections</option>
+          <option value="featured-products">Featured Products</option>
+          <option value="home-content">Page Content</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <select name="home_section_2" id="home_section_2">
+          <option value="">None</option>
+          <option value="slider">Slider</option>
+          <option value="featured-collections">Featured Collections</option>
+          <option value="featured-products">Featured Products</option>
+          <option value="home-content">Page Content</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <select name="home_section_3" id="home_section_3">
+          <option value="">None</option>
+          <option value="slider">Slider</option>
+          <option value="featured-collections">Featured Collections</option>
+          <option value="featured-products">Featured Products</option>
+          <option value="home-content">Page Content</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <select name="home_section_4" id="home_section_4">
+          <option value="">None</option>
+          <option value="slider">Slider</option>
+          <option value="featured-collections">Featured Collections</option>
+          <option value="featured-products">Featured Products</option>
+          <option value="home-content">Page Content</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <small>You can configure each section below.</small>
+      </td>
+    </tr>
+  </table>
+</fieldset>
+
+<!-- Home Page - Slider -->
+<fieldset>
+  <legend>Home Page - Slider</legend>
+  <table>
+    <tr>
+      <td colspan="2">
+        <p>You can turn this section on and off in the Home Page section above</p>
+        <p>Note: The optimal dimensions for your slider images are 770px wide by 420px high.</p>
+        <h3>Options</h3>
+      </td>
+    </tr>
+    <tr>
+      <th><label for="slider_home_enable">Enable slider</label></th>
+      <td><input type="checkbox" id="slider_home_enable" name="slider_home_enable" value="1" /></td>
+    </tr>
+    <tr>
+      <th><label for="slider_home_auto">Auto-rotate slides</label></th>
+      <td><input type="checkbox" id="slider_home_auto" name="slider_home_auto" value="1" /></td>
+    </tr>
+    <tr>
+      <th>
+        <label for="slider_home_rate">Rotation interval</label>
+      </th>
+      <td>
+        <select name="slider_home_rate" id="slider_home_rate">
+          <option value="5000">5 seconds</option>
+          <option value="7000">7 seconds</option>
+          <option value="10000">10 seconds</option>
+          <option value="15000">15 seconds</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <th><label for="slider_home_transition">Animation</label></th>
+      <td>
+        <select name="slider_home_transition" id="slider_home_transition">
+          <option value="fade">Fade</option>
+          <option value="slide">Slide</option>
+        </select>
+      </td>
+    </tr>
+  </table>
+  <table>
+    <tr>
+      <td colspan="2">
+        <h3>Slide 1</h3>
+      </td>
+    </tr>
+    <tr>
+      <th><label for="slide_1">Enable</label></th>
+      <td><input type="checkbox" id="slide_1" name="slide_1" value="1" /></td>
+    </tr>
+    <tr>
+      <th><label for="slide_1">Background Image</label></th>
+      <td><input type="file" name="slide_1.jpg" id="slide_1" data-max-width="970" /></td>
+    </tr>
+    <tr>
+      <th><label for="slide_1_headline">Headline Text</label></th>
+      <td><input type="text" id="slide_1_headline" name="slide_1_headline" size="50" value="" /></td>
+    </tr>
+     <tr>
+      <th><label for="slide_1_subheadline">Subheadline Text</label></th>
+      <td><input type="text" id="slide_1_subheadline" name="slide_1_subheadline" size="100" value="" /></td>
+    </tr>
+    <tr>
+      <th><label for="slide_1_button">Button Text</label></th>
+      <td><input type="text" id="slide_1_button" name="slide_1_button" size="50" value="" /></td>
+    </tr>
+     <tr>
+      <th><label for="slide_1_link">Button URL</label></th>
+      <td><input type="text" id="slide_1_link" name="slide_1_link" size="50" value="" /></td>
+    </tr>
+  </table>
+   <table>
+    <tr>
+      <td colspan="2">
+        <h3>Slide 2</h3>
+      </td>
+    </tr>
+    <tr>
+      <th><label for="slide_2">Enable</label></th>
+      <td><input type="checkbox" id="slide_2" name="slide_2" value="1" /></td>
+    </tr>
+    <tr>
+      <th><label for="slide_2">Background Image</label></th>
+      <td><input type="file" name="slide_2.jpg" id="slide_2" data-max-width="970" /></td>
+    </tr>
+    <tr>
+      <th><label for="slide_2_headline">Headline Text</label></th>
+      <td><input type="text" id="slide_2_headline" name="slide_2_headline" size="50" value="" /></td>
+    </tr>
+     <tr>
+      <th><label for="slide_2_subheadline">Subheadline Text</label></th>
+      <td><input type="text" id="slide_2_subheadline" name="slide_2_subheadline" size="100" value="" /></td>
+    </tr>
+    <tr>
+      <th><label for="slide_2_button">Button Text</label></th>
+      <td><input type="text" id="slide_2_button" name="slide_2_button" size="50" value="" /></td>
+    </tr>
+     <tr>
+      <th><label for="slide_2_link">Button URL</label></th>
+      <td><input type="text" id="slide_2_link" name="slide_2_link" size="50" value="" /></td>
+    </tr>
+  </table>
+ <table>
+    <tr>
+      <td colspan="2">
+        <h3>Slide 3</h3>
+      </td>
+    </tr>
+    <tr>
+      <th><label for="slide_3">Enable</label></th>
+      <td><input type="checkbox" id="slide_3" name="slide_3" value="1" /></td>
+    </tr>
+    <tr>
+      <th><label for="slide_3">Background Image</label></th>
+      <td><input type="file" name="slide_3.jpg" id="slide_3" data-max-width="970" /></td>
+    </tr>
+    <tr>
+      <th><label for="slide_3_headline">Headline Text</label></th>
+      <td><input type="text" id="slide_3_headline" name="slide_3_headline" size="50" value="" /></td>
+    </tr>
+     <tr>
+      <th><label for="slide_3_subheadline">Subheadline Text</label></th>
+      <td><input type="text" id="slide_3_subheadline" name="slide_3_subheadline" size="100" value="" /></td>
+    </tr>
+    <tr>
+      <th><label for="slide_3_button">Button Text</label></th>
+      <td><input type="text" id="slide_3_button" name="slide_3_button" size="50" value="" /></td>
+    </tr>
+     <tr>
+      <th><label for="slide_3_link">Button URL</label></th>
+      <td><input type="text" id="slide_3_link" name="slide_3_link" size="50" value="" /></td>
+    </tr>
+  </table>
+</fieldset>
+
+<!-- Home Page - Featured Collections -->
+<fieldset>
+  <legend>Home Page - Featured Collections</legend>
+
+  <table>
+    <tr>
+      <td colspan="2">
+        <p>You can turn this section on and off in the Home Page section above</p>
+        <hr />
+      </td>
+    </tr>
+    <tr>
+      <th><label for="home_featured_desc_enable">Show collection descriptions</label></th>
+      <td><input type="checkbox" id="home_featured_desc_enable" name="home_featured_desc_enable" value="1" /></td>
+    </tr>
+    <tr>
+      <th><label>Choose Collections</label></th>
+      <td>
+        <input type="radio" name="home_featured_collections_sort" id="home_featured_auto" value="auto"/>
+        <label for="home_featured_auto" class="inline">Automatically <small>(3 featured)</small></label><br />
+      </td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>
+        <input type="radio" name="home_featured_collections_sort" id="home_featured_manual" value="manual" />
+        <label for="home_featured_manual" class="inline">Manually <small>(select below)</small></label>
+      </td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><select class="collection" name="collection_1" /></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><select class="collection" name="collection_2" /></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><select class="collection" name="collection_3" /></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><select class="collection" name="collection_4" /></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><select class="collection" name="collection_5" /></td>
+    </tr>
+  </table>
+</fieldset>
+
+<!-- Home Page - Featured Products -->
+<fieldset>
+  <legend>Home Page - Featured Products</legend>
+
+  <table>
+    <tr>
+      <td colspan="2">
+        <p>You can turn this section on and off in the Home Page section above</p>
+        <hr />
+      </td>
+    </tr>
+    <tr>
+      <th><label for="home_featured_products">Choose Collection</label></th>
+      <td><select class="collection" name="home_featured_products" /></td>
+    </tr>
+    <tr>
+      <th><label for="home_featured_products_num">Products per row</label></th>
+      <td>
+        <select name="home_featured_products_num" id="home_featured_products_num">
+          <option value="3">3 products</option>
+          <option value="4">4 products</option>
+          <option value="5">5 products</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <th><label for="home_featured_products_row_num">Number of rows</label></th>
+      <td>
+        <select name="home_featured_products_row_num" id="home_featured_products_row_num">
+          <option value="1">1 row</option>
+          <option value="2">2 rows</option>
+          <option value="3">3 rows</option>
+          <option value="4">4 rows</option>
+          <option value="5">5 rows</option>
+          <option value="6">6 rows</option>
+        </select>
+      </td>
+    </tr>
+  </table>
+</fieldset>
+
+<!-- Home Page - Page Content-->
+<fieldset>
+  <legend>Home Page - Page Content</legend>
+
+  <table>
+    <tr>
+      <td colspan="2">
+        <p>You can turn this section on and off in the Home Page section above</p>
+        <hr />
+      </td>
+    </tr>
+    <tr>
+      <th><label for="home_page_content">Select a page</label></th>
+      <td><select class="page" name="home_page_content" id="home_page_content" /></td>
+    </tr>
+  </table>
+
+</fieldset>
+
+<!-- Product Pages -->
+<fieldset>
+  <legend>Product Pages</legend>
+  <table>
+    <tr>
+      <th><label for="product_vendor_enable">Show product vendor</label></th>
+      <td><input type="checkbox" id="product_vendor_enable" name="product_vendor_enable" value="1" /></td>
+    </tr>
+    <tr>
+      <th><label for="product_quantity_enable">Show quantity selector</label></th>
+      <td><input type="checkbox" id="product_quantity_enable" name="product_quantity_enable" value="1" /></td>
+    </tr>
+    <tr>
+      <th><label for="product_image_zoom_enable">Enable image zoom</label></th>
+      <td colspan="2"><input type="checkbox" id="product_image_zoom_enable" name="product_image_zoom_enable" value="1" /></td>
+    </tr>
+    <tr>
+      <th><label for="product_related_enable">Enable related products</label></th>
+      <td><input type="checkbox" id="product_related_enable" name="product_related_enable" value="1" /></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <h3 class="heading">Product Reviews</h3>
+        You can easily add product reviews to this theme by first installing Shopify's free <a href="https://apps.shopify.com/product-reviews">Product Reviews</a> app.
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <label for="product_reviews_enable">Enable Product Reviews</label>
+        <small><a href="/admin/apps/product-reviews/settings">View Product Review settings</a></small>
+      </th>
+      <td><input type="checkbox" id="product_reviews_enable" name="product_reviews_enable" value="1" /></td>
+    </tr>
+    <tr>
+      <th>
+        <label for="product_reviews_star_color">
+          Star Color
+          <br /><small>This overrides the product review app settings</small>
+        </label>
+      </th>
+      <td>
+        <input id="product_reviews_star_color" name="product_reviews_star_color" class="color" type="text" value="#ffd500" />
+      </td>
+    </tr>
+  </table>
+</fieldset>
+
+<!-- Collection Pages -->
+<fieldset>
+  <legend>Collection Pages</legend>
+  <table>
+    <tr>
+      <th><label for="collections_sort_enable">Enable collection sorting</label></th>
+      <td><input type="checkbox" id="collections_sort_enable" name="collections_sort_enable" value="1" /></td>
+    </tr>
+    <tr>
+      <th><label for="collections_views_enable">Enable grid and list views</label></th>
+      <td><input type="checkbox" id="collections_views_enable" name="collections_views_enable" value="1" /></td>
+    </tr>
+    <tr>
+      <th><label for="collections_tags_enable">Enable sorting by tags</label></th>
+      <td><input type="checkbox" id="collections_tags_enable" name="collections_tags_enable" value="1" /></td>
+    </tr>
+  </table>
+</fieldset>
+
+<!-- Blog Pages -->
+<fieldset>
+  <legend>Blog Pages</legend>
+  <table>
+    <tr>
+      <th><label for="blog_author_enable">Show blog authors on each post</label></th>
+      <td><input type="checkbox" id="blog_author_enable" name="blog_author_enable" value="1" /></td>
+    </tr>
+  </table>
+</fieldset>
+
+<!-- Cart Pages -->
+<fieldset>
+  <legend>Cart Page</legend>
+  <table>
+    <tr>
+      <th><label for="cart_notes_enable">Allow notes with orders</label></th>
+      <td><input type="checkbox" id="cart_notes_enable" name="cart_notes_enable" value="1" /></td>
+    </tr>
+    <tr>
+      <th><label for="ajax_cart_enable">Enable Ajaxify Cart</label></th>
+      <td>
+        <input type="checkbox" id="ajax_cart_enable" name="ajax_cart_enable" />
+        <small><a href="http://shopify.com/timber#ajax-cart" title="Ajax Cart Documentation">View Documentation</a></small>
+      </td>
+    </tr>
+    <tr>
+      <th><label for="ajax_cart_method">Ajax Cart Type</label></th>
+      <td>
+        <select name="ajax_cart_method" id="ajax_cart_method">
+          <option value="drawer">Drawer</option>
+          <option value="flip">Flip</option>
+          <option value="modal">Modal</option>
+        </select>
+      </td>
+    </tr>
+  </table>
+</fieldset>
+
+<!-- Social Sharing -->
+<fieldset>
+  <legend>Social Sharing</legend>
+  <table>
+    <tr>
+      <th>
+        <label for="twittercard_handle">Twitter Handle</label>
+      </th>
+      <td><input type="text" id="twittercard_handle" name="twittercard_handle" value="@" /></td>
+    </tr>
+    <tr>
+      <th><label for="social_sharing_products">Enable sharing for products</label></th>
+      <td><input type="checkbox" id="social_sharing_products" name="social_sharing_products" value="1" /></td>
+    </tr>
+    <tr>
+      <th><label for="social_sharing_blog">Enable sharing for blog articles</label></th>
+      <td><input type="checkbox" id="social_sharing_blog" name="social_sharing_blog" value="1" /></td>
+    </tr>
+    <tr>
+      <th>
+        <label for="social_sharing_count">
+          Show shared count
+          <br /><small>Only available for Facebook, Twitter, and Pinterest</small>
+        </label>
+      </th>
+      <td><input type="checkbox" id="social_sharing_count" name="social_sharing_count" value="1" /></td>
+    </tr>
+    <tr>
+      <th><label for="social_sharing_style">Button Style</label></th>
+      <td>
+        <select id="social_sharing_style" name="social_sharing_style">
+          <option value="">Normal</option>
+          <option value="is-large">Large</option>
+          <option value="is-clean">Clean</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td>
+              <table>
+                <th width="150"><label for="share_facebook">Share on Facebook</label></th>
+                <td><input type="checkbox" id="share_facebook" name="share_facebook" value="1" /></td>
+              </table>
+            </td>
+            <td>
+              <table>
+                <th width="150"><label for="share_twitter">Tweet on Twitter</label></th>
+                <td><input type="checkbox" id="share_twitter" name="share_twitter" value="1" /></td>
+              </table>
+            </td>
+            <td>
+              <table>
+                <th width="150"><label for="share_pinterest">Pin on Pinterest</label></th>
+                <td><input type="checkbox" id="share_pinterest" name="share_pinterest" value="1" /></td>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table>
+                <th width="150"><label for="share_fancy">Add to Fancy</label></th>
+                <td><input type="checkbox" id="share_fancy" name="share_fancy" value="1" /></td>
+              </table>
+            </td>
+            <td>
+              <table>
+                <th width="150"><label for="share_google">+1 on Google Plus</label></th>
+                <td><input type="checkbox" id="share_google" name="share_google" value="1" /></td>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</fieldset>

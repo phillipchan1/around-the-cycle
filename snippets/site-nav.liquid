@@ -1,0 +1,73 @@
+{% comment %}
+  List out your main-menu linklist (default)
+
+  More info on linklists:
+    - http://docs.shopify.com/themes/liquid-variables/linklists
+{% endcomment %}
+<span id="mobile-button">Menu</span>
+<ul class="site-nav left" id="AccessibleNav left">
+  <li><a href="/collections/all">Shop</a>
+  	<ul class="dropdown" id="shop-link">
+      <a href="/collections/bikes"><li>Bikes</li></a>
+<!--       <a href="/collections/parts"><li>Parts</li></a> -->
+<!--       <a href="/collections/accessories"><li>Accessories</li></a> -->
+<!--       <a href="/collections/apparel"><li>Apparel</li></a> -->
+<!--       <a href="/collections/upcycled"><li>Upcycled</li></a> -->
+      <a href="http://stores.ebay.com/Around-The-Cycle"><li id="ebay-link">eBay Store</li></a>
+  	</ul>
+  </li>
+  <li><a href="/pages/services">Services</a>
+  <ul class="dropdown" id="services-link">
+    <a href="/pages/services"><li>Repair &amp; Fix</li></a>
+    <a href="/pages/services#fit-section"><li>Fit &amp; Adjust</li></a>
+    <a href="/pages/services#ship-section"><li>Pack &amp; Ship</li></a>
+  	</ul>
+  </li>
+  <li><a href="/pages/sell">Sell</a></li>
+</ul>
+<a href="/">
+<span class="logo-z">
+  <span class="logo-bg-z"><img src="{{ 'logo-header.svg' | asset_url }}" /></span>
+</span>
+</a>
+<ul class="site-nav" id="AccessibleNav right">
+  <li><a href="/blogs/atc-blog">Resources</a>
+  <ul class="dropdown" id="shop-link">
+      <a href="/blogs/atc-blog"><li>Blog</li></a>
+<!--       <a href="/pages/upcycle"><li>Upcycle</li></a> -->
+<!--       <a href="/pages/sizing-chart"><li>Sizing Chart</li></a> -->
+  	</ul>
+    </li>
+  <li><a href="/pages/about-us">About</a>
+  <ul class="dropdown" id="shop-link">
+      <a href="/pages/about-us"><li>About</li></a>
+<!--       <a href="/pages/calendar"><li>Calendar</li></a> -->
+  	</ul>
+    </li>
+  <li>
+  <a href="/pages/contact">Contact</a>
+  </li>
+</ul>
+<span id="cart">
+    <a href="/cart" class="cart-toggle">
+            <span class="icon icon-cart header-bar__cart-icon" aria-hidden="true"></span>
+            {{ 'layout.cart.title' | t }}
+            <span class="cart-count header-bar__cart-count{% if cart.item_count == 0 %} hidden-count{% endif %}">{{ cart.item_count }}</span>
+          </a>
+  </span>
+<div id="mobile-menu">
+<ul>
+  <a href="/collections/bikes"><li>Shop Bikes</li></a>
+  <a href="/pages/services"><li>Services</li></a>
+  <a href="/pages/sell"><li>Sell</li></a>
+  <a href="/pages/about-us"><li>About</li></a>
+  <a href="/pages/contact"><li>Contact</li></a>
+  </ul>
+</div>
+
+<script>
+  
+  $( "#mobile-button" ).click(function() {
+  $( "#mobile-menu" ).toggleClass( "menu-active" );
+});
+</script>

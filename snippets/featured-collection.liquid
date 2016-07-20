@@ -1,0 +1,50 @@
+{% assign collection = collections.bikes %}
+{% assign number_of_products_to_fetch = 15 %}
+{% assign grid_item_width = 'one-whole' %}
+
+<div class="featured-collection">
+  <div class="ft-bike text-center">
+  
+    <h3>Featured <span class="bold-text">Bikes</span></h3>
+      <div class="grid--full owl-carousel" id="homepage-featured">
+        {% for product in collection.products limit: 12 %}
+              {% include 'product-grid-item' %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+<script>
+$(document).ready(function() {
+     //Sort random function
+  function random(owlSelector){
+    owlSelector.children().sort(function(){
+        return Math.round(Math.random()) - 0.5;
+    }).each(function(){
+      $(this).appendTo(owlSelector);
+    });
+  }
+ 
+  $("#homepage-featured").owlCarousel({
+  
+ 
+    // Most important owl features
+    items : 3,
+    
+    loop: true,
+     navigation: true,
+    navigationText: [
+      "<div class='chevron-left owl-arrows'></div>",
+      "<div class='chevron-right owl-arrows'></div>"
+      ],
+
+    rewindNav : true,
+    
+    beforeInit : function(elem){
+      //Parameter elem pointing to $("#owl-demo")
+      random(elem);
+    }
+  });
+          
+ 
+});
+</script>
