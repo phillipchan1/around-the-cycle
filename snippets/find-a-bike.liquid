@@ -1,37 +1,106 @@
-<label>
-	Height:
-	<select class="height-filter">
-		<option value="all">All Heights</option>
-		{% for tag in collections.bikes.all_tags %}
-			{%if tag contains "Height" %}
-				<option value="{{tag}}">{{tag | replace: "_", " "}}</option>
-			{% endif %}
-		{% endfor %}
-	</select>
-</label>
+<div class="find-a-bike wrapper">
+	<div class="grid">
+		<form>
+			<label>
+				Height:
+				<select class="height-filter">
+					<option value="all">All Heights</option>
+					{% for tag in collections.bikes.all_tags %}
+						{%if tag contains "Height" %}
+							<option value="{{tag}}">{{tag | replace: "_", " "}}</option>
+						{% endif %}
+					{% endfor %}
+				</select>
+			</label>
 
-<label>
-	Type of Bike:
-	<select class="type-filter">
-		<option value="all">All Types</option>
-		{% for product_type in shop.types %}
-		  <option value="{{product_type}}">{{product_type | replace: "Consignment - Bicycles - ", "" | replace: "Inventory - Bicycles - ", ""}}</option>
-		{% endfor %}
-	</select>
-</label>
+			<label>
+				Type of Bike:
+				<select class="type-filter">
+					<option value="all">All Types</option>
+					{% for tag in collections.bikes.all_tags %}
+						{%if tag contains "Type_" %}
+							<option value="{{tag}}">{{tag | replace: "Type", "" | replace: "_", " " }}</option>
+						{% endif %}
+					{% endfor %}
+				</select>
+			</label>
 
-<button id="find-bike">Find My Bike</button>
+			<a class="btn" href="#" id="find-bike">Find My Bike</a>
+		</form>
+	</div>
+</div>
+
+<style>
+	.wrapper.find-a-bike {
+		padding-top: 3em;
+	}
+
+	.find-a-bike form {
+		align-items: center;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.find-a-bike form label {
+		flex-basis: 43%;
+		padding: 1em;
+	}
+
+	.find-a-bike form a {
+		display: block;
+		flex-basis: 14%;
+	}
+
+	@media only screen and (max-width: 500px) {
+		.find-a-bike form label,
+		.find-a-bike form a {
+			flex-basis: 100%;
+		}
+	}
+</style>
 
 <script>
-	var $height;
+	var getFormValues = function(selector) {
+		var formValues = [];
+		var form = document.querySelector(selector);
 
-	$('.height-filter').change(function() {
-		$height = $('.height-filter option:selected').val();
-		console.log($height);
-	});
+		for ( var i = 0; i < form.elements.length; i++ ) {
+			var e = form.elements[i];
 
-	$('#find-bike').on("click", function() {
-		$height = $height.replace(" ", "-").toLowerCase();
-		window.location.href = 'http://around-the-cycle.myshopify.com/collections/all/' + $height;
+			if (e.value !== "all" && e.value !== "") {
+				formValues.push(formatDropdownValues(e.value));
+			}
+		}
+
+		return formValues;
+	}
+
+	var queryStringfromArray = function(array) {
+		var queryString = '';
+
+		for (var p = 0; p < array.length; p++) {
+			if (p === 0) {
+				queryString = queryString + array[p];
+			} else {
+				queryString = queryString + "+" + array[p];
+			}
+		}
+
+		return queryString;
+	}
+
+	var formatDropdownValues = function(value) {
+		return value.replace(" ", "-").toLowerCase();
+	}
+
+	var goFilter = function(queryString) {
+		window.location.href = 'http://around-the-cycle.myshopify.com/collections/all/' + queryString;
+	}
+
+	$('#find-bike').on("click", function(e) {
+		e.preventDefault();
+		var formValues = getFormValues(".find-a-bike form");
+		var queryString = queryStringfromArray(formValues);
+		goFilter(queryString);
 	});
 </script>
