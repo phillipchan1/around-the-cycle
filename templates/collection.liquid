@@ -1,6 +1,6 @@
-{% paginate collection.products by 20 %}
+{% paginate collection.products by 24 %}
  {% if collection.title == 'All' %}
-<header class="section-header section-header--large section-header-image" id="accessories">
+<header class="section-header section-header--large section-header-image" id="all">
   <div class="wrapper">
     <h2 class="section-header__title"><span class="bold-text">Bikes, Parts &amp; Gear</span></h2>
     <p>{{ collection.description }}</p>
@@ -53,7 +53,8 @@
   <hr />
   <div class="grid">
     <div class="grid__item large--one-quarter">
-<div id="collection-filters-container"></div>
+<div id="collection-filters-container">
+  </div>
     </div>
 <div class="grid__item large--three-quarters">
   

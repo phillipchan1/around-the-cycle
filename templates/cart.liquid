@@ -9,12 +9,13 @@
 
 {% endcomment %}
 {% if cart.item_count > 0 %}
+
 <div class="wrapper">
   <form action="/cart" method="post" novalidate class="cart">
-
-    <div class="section-header">
-      <h1 class="section-header__title">{{ 'cart.general.title' | t }}</h1>
+<div class="section-header">
+  <h1 class="section-header__title"><span class="bold-text">{{ 'cart.general.title' | t }}</span></h1>
     </div>
+    
 
     <div class="cart__row medium-down--hide cart__header-labels">
       <div class="grid--full">
@@ -156,6 +157,7 @@
             <span class="cart__subtotal-title">{{ 'cart.general.subtotal' | t }}</span>
             <span class="h5 cart__subtotal">{{ cart.total_price | money }}</span>
           </p>
+          {% include 'storepickup' %}
           <p><em>{{ 'cart.general.shipping_at_checkout' | t }}</em></p>
           <input type="submit" name="update" class="btn--secondary update-cart" value="{{ 'cart.general.update' | t }}">
           <input type="submit" name="checkout" class="btn" value="{{ 'cart.general.checkout' | t }}">

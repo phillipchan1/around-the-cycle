@@ -1,15 +1,15 @@
-{% paginate collection.products by 20 %}
+{% paginate collection.products by 48 %}
 
 <header class="section-header section-header-image" id="bike-collection">
   <div class="background-overlay"></div>
-  <div class="wrapper">
-    <h2 class="section-header__title"><span class="bold-text">Bicycles</span></h2>
+<div class="wrapper">
+  <h2 class="section-header__title"><span class="bold-text">Used &amp; New Bicycles</span></h2> <!--&amp; Frames -->
   	<p>{{ collection.description }}</p>
   </div>
-  
-  
 </header>
 
+
+<!-- Remove bike images from bike collection page
 <div class="biketypes">
   <ul>
     <a href="/collections/bikes/biketype_road">
@@ -81,6 +81,7 @@
           </a>
   </ul>
 </div>
+-->
 
 <div class="wrapper">
 {% if settings.collections_sort_enable %}
@@ -90,6 +91,8 @@
   <div class="grid">
     <div class="grid__item large--one-quarter">
 <div id="collection-filters-container"></div>
+      <body> <br><i>*Height filter shows a possible range of sizes suitable for the given height. Your ideal size will be found in the <a href = "/pages/sizing-chart"><u>sizing chart</u></a></i><p></p></body>
+    
     </div>
 <div class="grid__item large--three-quarters">
   <div class="grid-uniform grid-link__container text-center">

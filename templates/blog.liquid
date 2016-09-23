@@ -26,7 +26,7 @@
     {% if article.excerpt.size > 0 %}
       {{ article.excerpt }}
     {% else %}
-      <p>{{ article.content | truncatewords: 100 }}</p>
+      <p>{{ article.content | truncatewords: 750 }}</p>
     {% endif %}
   </div>
 

@@ -285,7 +285,7 @@ hr {
   clear: both;
   border-top: solid $colorBorder;
   border-width: 1px 0 0;
-  margin: $gutter 0;
+  margin: ($gutter/2) 0;
   height: 0;
 
   &.hr--small {
@@ -1132,6 +1132,7 @@ img.auto,
   height: 0;
   height: auto;
     margin-bottom: 45px;
+  margin-top: 45px;
 
   iframe {
     position: absolute;
@@ -2442,8 +2443,8 @@ left: 16%;
 
 .cart .section-header {
   background: #2d2d2d;
-  background-image: url('{{ "about2.jpg" | asset_url }}');
-   background-position: 50% 85%;
+  background-image: url('{{ "parts.jpg" | asset_url }}');
+  background-position: 50% 85%;
 }
 
 .cart .section-header h1 {
@@ -2606,7 +2607,7 @@ main.wrapper.main-content {
 /*================ Home Page - Index Biketypes ================*/
 
 .biketypes ul {
-    width: 80%;
+    width: 90%;
   text-align: center;
   margin: auto;
 }
@@ -2621,6 +2622,17 @@ main.wrapper.main-content {
   margin: 0;
   margin-top: -6px;
   font-family: 'United-Bold';
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.biketypes h3 {
+  margin: 0;
+  margin-top: 0px;
+  font-family: 'United-Light';
   text-transform: uppercase;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -2655,6 +2667,7 @@ main.wrapper.main-content {
    margin-top:-15px;
    margin-bottom: 25px;
 }
+
 
 /*================ Home Page - Index Directions ================*/
 
@@ -2865,7 +2878,7 @@ transition: all 0.3s ease;
 }
 
 #sell #sell-details.section {
-  display:none;
+/*  display:none; */
  padding: 45px 0px; 
 }
 
@@ -2989,6 +3002,10 @@ div#extra-info {
 }
 
 /*================ Image Headers ================*/
+#all .main-content .section-header {
+ background-image: url('{{ "parts.jpg" | asset_url }}');
+}
+
 #bikes .main-content .section-header {
  background-image: url('{{ "bike.jpg" | asset_url }}');
 }
@@ -3002,7 +3019,7 @@ div#extra-info {
 }
 
 #sizing-chart .main-content .section-header {
- background-image: url('{{ "fit.jpg" | asset_url }}');
+ background-image: url('{{ "fit2.jpg" | asset_url }}');
 }
 
 #sell .main-content .section-header {
@@ -3010,7 +3027,7 @@ div#extra-info {
 }
 
 #about-us .main-content .section-header, #calendar .main-content .section-header {
- background-image: url('{{ "about.jpg" | asset_url }}');
+ background-image: url('{{ "parts.jpg" | asset_url }}');
  background-position: center center;
 }
 
@@ -3063,12 +3080,12 @@ one or separate lines, active links instead of checkboxes, colors etc. */
   display: inline;  
   float: right;
 */
-  border: 1px solid #eee;
+/*  border: 1px solid #eee;
   padding: 1px 15px 17px;
   background: #fafafa;
   border-radius: 5px;
   -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
+  -webkit-border-radius: 5px; */
 }
  
 .cf-title { 
