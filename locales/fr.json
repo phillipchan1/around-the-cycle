@@ -281,7 +281,7 @@
       "print": "Imprimer"
     }
   },
-  "date_formats":{
-    "month_day_year":"%d %B, %Y"
+  "date_formats": {
+    "month_day_year": "%d %B, %Y"
   }
 }

@@ -24,9 +24,10 @@
     <p class="grid-link__meta">
       {% if product.price_varies %}{{ 'products.general.from' | t }}{% endif %}
       {{ product.price | money }}
-      {% if on_sale %}
-        <br><s class="grid-link__sale_price">{{ product.compare_at_price | money }}</s>
+      {% if product.compare_at_price > product.price %}
+      | <s class="grid-link__sale_price">{{ product.compare_at_price | money }}</s>
       {% endif %}
+      
       {% if settings.product_reviews_enable %}
         <br><span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
       {% endif %}
