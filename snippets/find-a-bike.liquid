@@ -15,8 +15,6 @@
 				</select>
 			</label>
 
-
-
 			<div class="bike-types">
 				<article data-bike-type="biketype_road">
 					<object>
@@ -75,7 +73,6 @@
 
 <style>
 	.wrapper.find-a-bike {
-		padding-top: 3em;
 		background-image: url(//cdn.shopify.com/s/files/1/0799/5585/t/2/assets/mountain-bg.svg?4035468196648816332);
 		background-size: cover;
 	}
@@ -84,6 +81,7 @@
 		align-items: center;
 		display: flex;
 		flex-wrap: wrap;
+		margin: 0;
 	}
 
 	.find-a-bike form label {
@@ -112,6 +110,12 @@
 		cursor: pointer;
 		opacity: 0.6;
 		transition: all .2s ease-in;
+	}
+
+	.find-a-bike .bike-types article:hover .style0 {
+		fill: #11b390;
+    	stroke: #11b390;
+    	transition: all 0.25s ease-in-out;
 	}
 
 	@media only screen and (max-width: 780px) {
